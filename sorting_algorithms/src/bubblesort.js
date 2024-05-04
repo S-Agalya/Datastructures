@@ -1,13 +1,14 @@
 //bubble sort
-export function bubblesort(arr){
-for(var i=0;i<arr.length-1;i++){        //loop for running multiple times until the array is sorted
-     for(var j=0;j<arr.length-i-1;j++){  //no of ele to be swapped
-        if(arr[j]>arr[j+1]){
-            [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
-        } 
-    } 
+export function bubblesort(arr) {
+    for (var i = 0; i < arr.length - 1; i++) {  // loop for running multiple times until the array is sorted
+        for (var j = 0; j < arr.length - i - 1; j++) { // number of elements to be swapped
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+            }
+        }
+    }
 }
-}
+
 //console.log(bubblesort([1,5,3,4,2,8,6]))
 
 

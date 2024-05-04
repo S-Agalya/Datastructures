@@ -1,18 +1,19 @@
 //selection sort
- export function selectionsort(arr){
-    for(var i=0;i<arr.length-1;i++){
-       let minIndex=i
-        for(var j=i+1;j<arr.length;j++){
-            if(arr[j]<arr[minIndex]){
-                minIndex=j
+ export function selectionsort(arr) {
+    for (var i = 0; i < arr.length - 1; i++) {
+        let minIndex = i;
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
             }
-
         }
-            if(minIndex!==i){
-                [arr[i],arr[minIndex]]=[arr[minIndex],arr[i]]
-            }
-    }return arr
- }
+        if (minIndex !== i) {
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+        }
+    }
+    return arr;
+}
+
  //console.log(selectionsort([1,5,3,4,2,4,6]))
 
 
